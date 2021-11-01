@@ -1,0 +1,37 @@
+<DOCTYPE HTML!>
+<html>
+<head>
+  <title>Evelyn Velez </title>
+  
+  //add css
+  <link rel="stylesheet" href="#">
+
+</head>
+
+<body>
+  <h1>Evelyn Velez</h1>
+  
+  <h1>Favorite Hobby: Hiking </h1>
+  
+  <h3>The current time is: <br> <span id="time"></span></h3>
+ 
+  <script>
+    function getTime(){
+			var timeStr = "";
+
+			var timeNow = new Date();
+			var hour = timeNow.getHours()%12;
+			
+      if(hour == 0)
+				hour = 12;
+
+			timeStr += hour + ":" + timeNow.getMinutes() + ":" + timeNow.getSeconds();
+
+			document.getElementById("time").innerHTML = timeStr; 
+
+		}
+    setInterval(getTime, 1000);
+  </script> 
+
+</body>
+</html>
