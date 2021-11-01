@@ -17,19 +17,18 @@
  
   <script>
     function getTime(){
-			var timeStr = "";
-
-			var timeNow = new Date();
-			var hour = timeNow.getHours()%12;
+	var timeStr = "";
+	var timeNow = new Date();
+	var hour = timeNow.getHours()%12;
 			
-      if(hour == 0)
-				hour = 12;
+     	if(hour == 0)
+		hour = 12;
 
-			timeStr += hour + ":" + timeNow.getMinutes() + ":" + timeNow.getSeconds();
+	timeStr += hour + ":" + timeNow.getMinutes() + ":" + timeNow.getSeconds();
 
-			document.getElementById("time").innerHTML = timeStr; 
+	document.getElementById("time").innerHTML = timeStr; 
 
-		}
+    }
     setInterval(getTime, 1000);
   </script> 
 
