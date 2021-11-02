@@ -1,0 +1,27 @@
+body{
+  background-color: #FFF9FB;
+  
+}
+
+h1 {
+  color: #4B88A2;
+ 
+}
+
+h3{
+  color: 252627;
+  font-size: 2rem;
+  
+}
+
+
+.center{
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+
